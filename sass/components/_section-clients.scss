@@ -3,11 +3,21 @@
 }
 
 .clients-title {
-  @extend %section-title;
+font-weight: 700;
+font-size: 28px;
+line-height: 1.18;
+text-align: center;
+
+margin-top: 0;
+margin-bottom: 30px;
+
+
+  // @extend %section-title;
 }
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -19,7 +29,8 @@
 
 .clients-item {
   display: flex;
-  width: calc((100% - 150px) / 6);
+  // width: calc((100% - 150px) / 6);
+  width: calc((100% - 30px) / 2);
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;

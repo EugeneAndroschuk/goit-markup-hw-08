@@ -1,23 +1,41 @@
 .pageheader {
   border-bottom: 1px solid #ececec;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  .logo {
+    padding-top: 0;
+    padding-bottom: 0;
+  font-size: 24px;
+line-height: 1.17;
+display: block;
+  text-align: left;
+}
 }
 
 .pageheader-wrapper {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 }
 
 .pageheader-navigation {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 }
+
+// .logo {
+//   font-size: 24px;
+// line-height: 1.17;
+// display: block;
+//   text-align: left;
+// }
 
 .logo-header {
   color: #000000;
 }
 
 .nav {
-  display: flex;
+  // display: flex;
   margin-left: 93px;
   gap: 50px;
 }
@@ -56,7 +74,7 @@
 }
 
 .contacts {
-  display: flex;
+  // display: flex;
   margin-left: auto;
   gap: 50px;
 }

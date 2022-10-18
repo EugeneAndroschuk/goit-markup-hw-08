@@ -9,16 +9,22 @@
 }
 
 .features-list {
-  display: flex;
+  // display: flex;
   gap: 30px;
 }
 
 .features-item {
-  width: calc((100% - 90px) / 4);
+width: 100%;
+&:not(:last-child) {
+margin-bottom: 30px;
+
+}
+
+  // width: calc((100% - 90px) / 4);
 }
 
 .features-title {
-  text-align: left;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -26,6 +32,8 @@
 
   margin-top: 0;
   margin-bottom: 10px;
+
+  // text-align: left;
 }
 
 .features-text {
