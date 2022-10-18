@@ -1,0 +1,43 @@
+.apps {
+  padding-top: 0;
+}
+
+.apps-title {
+    @extend %section-title;
+}
+
+.apps-list {
+  display: flex;
+  gap: 30px;
+}
+
+.apps-item {
+  width: calc((100% - 60px) / 3);
+}
+
+.apps-container {
+  position: relative;
+}
+
+.apps-box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.apps-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
