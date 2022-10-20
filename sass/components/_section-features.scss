@@ -9,18 +9,23 @@
 }
 
 .features-list {
-  // display: flex;
+  @media screen and (min-width: 768px) {
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+  }
 }
 
 .features-item {
+  @media screen and (max-width: 767px) {
 width: 100%;
 &:not(:last-child) {
 margin-bottom: 30px;
-
 }
-
-  // width: calc((100% - 90px) / 4);
+}
+ @media screen and (min-width: 768px) {
+  width: calc((100% - 30px) / 2);
+ }
 }
 
 .features-title {
@@ -33,7 +38,9 @@ margin-bottom: 30px;
   margin-top: 0;
   margin-bottom: 10px;
 
-  // text-align: left;
+  @media screen and (min-width: 768px) {
+  text-align: left;
+  }
 }
 
 .features-text {

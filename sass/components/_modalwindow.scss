@@ -22,8 +22,11 @@
   top: 50%;
   left: 50%;
 
-  width: 528px;
-  min-height: 521px;
+  // width: 528px;
+  // min-height: 521px;
+
+  width: 450px;
+  min-height: 609px;
 
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -67,7 +70,8 @@
 }
 
 .form {
-  width: 448px;
+  // width: 448px;
+  width: 370px;
 
   .button-submit:hover,
   .button-submit:focus {
@@ -160,7 +164,7 @@
   display: flex;
   align-items: center;
   gap: 9px;
-  margin-left: 12px;
+  // margin-left: 12px;
   margin-bottom: 30px;
 }
 
@@ -183,8 +187,11 @@
 }
 
 .checkbox-label {
-  font-size: l4px;
-  line-height: 1.71;
+  // font-size: l4px;
+  // line-height: 1.71;
+
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--secondery-text-color);
 }

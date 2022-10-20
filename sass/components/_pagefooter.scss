@@ -34,6 +34,14 @@ line-height: 1.17;
 
 }
 
+@media screen and (min-width: 768px) {
+.footer-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 165px;
+}
+}
+
 .logo-footer {
   color: var(--herobtntext-primbgd-color);
 }
@@ -112,7 +120,7 @@ line-height: 1.17;
   // display: flex;
   // width: 358px;
 
-  text-align: center;
+  text-align: left;
   width: 450px;
   
   height: 50px;

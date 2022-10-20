@@ -29,7 +29,11 @@ margin-bottom: 30px;
 
 .clients-item {
   display: flex;
-  // width: calc((100% - 150px) / 6);
+
+  @media screen and (min-width: 768px) {
+width: calc((100% - 60px) / 3);
+  }
+  
   width: calc((100% - 30px) / 2);
   height: 92px;
   border: 1px solid #afb1b8;
