@@ -1,6 +1,21 @@
 .pageheader {
   border-bottom: 1px solid #ececec;
 
+//   @media screen and (max-width: 767px) {
+//     width: 480px;
+// border-bottom: 1px solid #ececec;
+//   }
+  
+//   @media screen and (min-width: 768px) and (max-width: 1199px){
+//     width: 768px;
+// border-bottom: 1px solid #ececec;
+//   }
+
+//   @media screen and (min-width: 1200){
+//     width: 1600px;
+// border-bottom: 1px solid #ececec;
+//   }
+
   @media screen and (max-width: 767px) {
     .container {
       position: relative;
@@ -43,6 +58,7 @@
 .pageheader-wrapper {
   position: relative;
   display: flex;
+  
   // @media screen and (min-width: 768px) {
   // display: flex;
   // align-items: center;
@@ -81,16 +97,17 @@
 
 .pageheader-menu {
   @media screen and (max-width: 767px) {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 480px;
     height: 796px;
     padding: 48px 40px;
-    background-color: white;
+    background-color: #FFFFFF;
     z-index: 999;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 
-    transform: translateX(100%);
+    transform: translateY(-110%);
     transition: transform 250ms ease-in-out;
   }
 
