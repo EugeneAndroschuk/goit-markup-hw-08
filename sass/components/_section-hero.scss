@@ -1,5 +1,5 @@
 .hero {
-  // background-color: var(--hero-footer-bgd-color);
+  background-color: var(--hero-footer-bgd-color);
   margin-left: auto;
   margin-right: auto;
 
@@ -8,6 +8,27 @@
     padding-bottom: 200px;
     max-width: 1600px;
     height: 600px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-img/header-desktop-img1x.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero-img/header-desktop-img2x.jpg");
+    }
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -15,6 +36,27 @@
     padding-bottom: 118px;
     width: 768px;
     height: 400px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-img/header-tablet-img1x.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero-img/header-tablet-img2x.jpg");
+    }
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   @media screen and (max-width: 767px) {
@@ -22,30 +64,27 @@
     padding-bottom: 118px;
     width: 480px;
     height: 400px;
-  }
 
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/header-img1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/header-img2x.jpg");
+      url("../images/hero-img/header-mobile-img1x.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero-img/header-mobile-img2x.jpg");
+    }
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 

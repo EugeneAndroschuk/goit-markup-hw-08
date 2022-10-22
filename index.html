@@ -209,12 +209,33 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="list team-list">
             <li class="team-card">
-              <img
-                src="./images/photo1.jpg"
-                alt="Фото"
-                width="270"
-                height="260"
-              />
+              <picture class="team-img">
+                <source
+                  srcset="
+                    ./images/team-img/team1-desktop-img1x270.jpg 1x,
+                    ./images/team-img/team1-desktop-img2x270.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img/team1-tablet-img1x354.jpg 1x,
+                    ./images/team-img/team1-tablet-img2x354.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img/team1-mobile-img1x450.jpg 1x,
+                    ./images/team-img/team1-mobile-img2x450.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/team-img/team1-desktop-img1x270.jpg"
+                  alt="Фото"
+                />
+              </picture>
               <div class="team-description">
                 <h3 class="team-member">Ігор Дем'яненко</h3>
                 <p class="team-position" lang="en">Product Designer</p>
@@ -252,12 +273,45 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                src="./images/photo2.jpg"
+              <!-- <img
+              class="team-img"
+              srcset="./images/team-img/team2-desktop-img1x270.jpg 270w,
+              ./images/team-img/team2-tablet-img1x354.jpg 354w,
+              ./images/team-img/team2-mobile-img1x450.jpg 450w,
+              ./images/team-img/team2-desktop-img2x270.jpg 540w,
+              ./images/team-img/team2-tablet-img2x354.jpg 708w,
+              ./images/team-img/team2-mobile-img2x450.jpg 900w"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
+                src="./images/team-img/team2-desktop-img1x270.jpg"
                 alt="Фото"
-                width="270"
-                height="260"
-              />
+              /> -->
+              <picture class="team-img">
+                <source
+                  srcset="
+                    ./images/team-img/team2-desktop-img1x270.jpg 1x,
+                    ./images/team-img/team2-desktop-img2x270.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img/team2-tablet-img1x354.jpg 1x,
+                    ./images/team-img/team2-tablet-img2x354.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img/team2-mobile-img1x450.jpg 1x,
+                    ./images/team-img/team2-mobile-img2x450.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/team-img/team1-desktop-img1x270.jpg"
+                  alt="Фото"
+                />
+              </picture>
               <div class="team-description">
                 <h3 class="team-member">Ольга Рєпіна</h3>
                 <p class="team-position" lang="en">Frontend Developer</p>
