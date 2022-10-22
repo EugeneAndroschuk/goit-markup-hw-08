@@ -164,7 +164,11 @@
             <li class="apps-item">
               <div class="apps-container">
                 <img
-                  src="./images/img1.jpg"
+                  srcset="
+                    ./images/apps-img/apps1-img1x370.jpg 1x,
+                    ./images/apps-img/apps1-img1x370.jpg 2x
+                  "
+                  src="./images/apps-img/apps1-img1x370.jpg"
                   alt="Десктопні додатки"
                   width="370"
                   height="294"
@@ -177,7 +181,11 @@
             <li class="apps-item">
               <div class="apps-container">
                 <img
-                  src="./images/img2.jpg"
+                  srcset="
+                    ./images/apps-img/apps2-img1x370.jpg 1x,
+                    ./images/apps-img/apps2-img2x370.jpg 2x
+                  "
+                  src="./images/apps-img/apps2-img1x370.jpg"
                   alt="Додатки для смартфонів"
                   width="370"
                   height="294"
@@ -190,7 +198,11 @@
             <li class="apps-item">
               <div class="apps-container">
                 <img
-                  src="./images/img3.jpg"
+                  srcset="
+                    ./images/apps-img/apps3-img1x370.jpg 1x,
+                    ./images/apps-img/apps3-img2x370.jpg 2x
+                  "
+                  src="./images/apps-img/apps3-img1x370.jpg"
                   alt="Додатки для планшетів"
                   width="370"
                   height="294"
@@ -308,7 +320,7 @@
                   media="(max-width: 767px)"
                 />
                 <img
-                  src="./images/team-img/team1-desktop-img1x270.jpg"
+                  src="./images/team-img/team2-desktop-img1x270.jpg"
                   alt="Фото"
                 />
               </picture>
@@ -348,12 +360,33 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                src="./images/photo3.jpg"
-                alt="Фото"
-                width="270"
-                height="260"
-              />
+              <picture class="team-img">
+                <source
+                  srcset="
+                    ./images/team-img/team3-desktop-img1x270.jpg 1x,
+                    ./images/team-img/team3-desktop-img2x270.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img/team3-tablet-img1x354.jpg 1x,
+                    ./images/team-img/team3-tablet-img2x354.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img/team3-mobile-img1x450.jpg 1x,
+                    ./images/team-img/team3-mobile-img2x450.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/team-img/team3-desktop-img1x270.jpg"
+                  alt="Фото"
+                />
+              </picture>
               <div class="team-description">
                 <h3 class="team-member">Микола Тарасов</h3>
                 <p class="team-position" lang="en">Marketing</p>
@@ -390,12 +423,33 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                src="./images/photo4.jpg"
-                alt="Фото"
-                width="270"
-                height="260"
-              />
+              <picture class="team-img">
+                <source
+                  srcset="
+                    ./images/team-img/team4-desktop-img1x270.jpg 1x,
+                    ./images/team-img/team4-desktop-img2x270.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img/team4-tablet-img1x354.jpg 1x,
+                    ./images/team-img/team4-tablet-img2x354.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-img/team4-mobile-img1x450.jpg 1x,
+                    ./images/team-img/team4-mobile-img2x450.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/team-img/team4-desktop-img1x270.jpg"
+                  alt="Фото"
+                />
+              </picture>
               <div class="team-description">
                 <h3 class="team-member">Михайло Єрмаков</h3>
                 <p class="team-position" lang="en">UI Designer</p>

@@ -1,5 +1,8 @@
 .team {
   background-color: var(--filter-btn-bgd-color);
+  @media screen and (max-width: 479px) {
+    width: 480px;
+  }
 }
 
 .team-title {
@@ -37,6 +40,7 @@
 
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
+      width: 450px;
       margin-bottom: 30px;
     }
   }
