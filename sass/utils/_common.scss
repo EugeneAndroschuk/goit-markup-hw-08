@@ -4,6 +4,9 @@ body {
   background-color: var(--herobtntext-primbgd-color);
   font-size: 14px;
   letter-spacing: 0.03em;
+  @media screen and (max-width: 319px) {
+    overflow-x: scroll;
+  }
 }
 
 .list {
@@ -31,27 +34,23 @@ img {
   margin-right: auto;
   text-align: center;
 
-  outline: 1px solid tomato;
-
-  // @media screen and (max-width: 319px) {
-  //   overflow-x: scroll;
-  // }
+  // outline: 1px solid tomato;
 
   @media screen and (max-width: 767px) {
     width: 480px;
   }
 
-   @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     width: 768px;
   }
 
-   @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     width: 1200px;
   }
 }
 
 .section {
- padding-top: 60px;
+  padding-top: 60px;
   padding-bottom: 60px;
 
   // padding-top: 94px;

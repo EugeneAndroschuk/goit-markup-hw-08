@@ -50,7 +50,7 @@
   cursor: pointer;
 }
 
-@mixin socialIconColor($backgroundColor, $fillColor){
+@mixin socialIconColor($backgroundColor, $fillColor) {
   display: flex;
   width: 44px;
   height: 44px;

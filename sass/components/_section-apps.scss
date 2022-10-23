@@ -1,14 +1,13 @@
 .apps {
-
-@media screen and (max-width: 1199px) {
-  display: none;
-}
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 
   padding-top: 0;
 }
 
 .apps-title {
-    @extend %section-title;
+  @extend %section-title;
 }
 
 .apps-list {

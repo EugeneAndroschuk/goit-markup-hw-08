@@ -20,7 +20,7 @@
   display: flex;
   gap: 30px;
   @media screen and (max-width: 1199px) {
-  flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 
@@ -42,7 +42,7 @@
   }
 
   @media screen and (max-width: 767px) {
-  width: calc((100% - 30px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 
   height: 92px;
