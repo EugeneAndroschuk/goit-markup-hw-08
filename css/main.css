@@ -331,8 +331,12 @@ img {
 
 .nav-item__active {
   position: relative;
-  padding-left: 10px;
   color: var(--btnbgd-linkactive-color);
+}
+@media screen and (max-width: 767px) {
+  .nav-item__active {
+    padding-left: 10px;
+  }
 }
 @media screen and (max-width: 767px) {
   .nav-item:not(:last-child) {
