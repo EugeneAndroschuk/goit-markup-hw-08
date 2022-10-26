@@ -1,8 +1,24 @@
 .filter {
   display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 8px;
+  margin-bottom: 40px;
+  max-width: 330px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 30px;
+    max-width: 1199px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+    max-width: 1600px;
+  }
 }
 
 .filter-button {
@@ -35,17 +51,12 @@
   }
 }
 
-// .filter-button:hover {
-//   background: var(--btnbgd-linkactive-color);
-//   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-//     0px 2px 2px rgba(0, 0, 0, 0.12);
-//   color: var(--herobtntext-primbgd-color);
-// }
-
 .product {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .product-link {
@@ -63,21 +74,20 @@
 }
 
 .product-item {
-  width: calc((100% - 60px) / 3);
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 3);
+  }
 }
-
-// .product-link:hover,
-// .product-link:focus {
-//   display: block;
-//   background: #ffffff;
-//   border: 1px solid #eeeeee;
-//   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-//     1px 4px 6px rgba(0, 0, 0, 0.16);
-// }
-
-// .product-link:hover .product-overlay {
-//   transform: translateY(-100%);
-// }
 
 .product-image {
   position: relative;
@@ -89,9 +99,13 @@
   top: 100%;
   left: 0;
   padding: 63px 24px;
-  width: 370px;
+  width: 450px;
   height: 294px;
   background-color: rgba(33, 150, 243, 0.9);
+
+  @media screen and (min-width: 768px) {
+    width: 370px;
+  }
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
