@@ -1598,6 +1598,25 @@ img {
   overflow: hidden;
 }
 
+@media screen and (max-width: 767px) {
+  .product-picture {
+    width: 450px;
+    height: 294px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .product-picture {
+    width: 354px;
+    height: 294px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product-picture {
+    width: 370px;
+    height: 294px;
+  }
+}
+
 .product-overlay {
   position: absolute;
   top: 100%;
