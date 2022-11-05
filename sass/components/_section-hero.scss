@@ -97,6 +97,9 @@
   margin-left: auto;
   margin-right: auto;
   font-weight: 900;
+  @media screen and (max-width: 389px) {
+    font-size: 20px;
+  }
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--herobtntext-primbgd-color);
@@ -104,7 +107,7 @@
   margin-bottom: 30px;
   text-align: center;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 390px) {
     max-width: 360px;
     font-size: 26px;
     line-height: 1.62;
