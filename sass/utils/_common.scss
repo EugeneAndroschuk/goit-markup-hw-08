@@ -26,17 +26,17 @@ img {
 }
 
 .container {
-  // box-sizing: border-box;
-  // width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 
-  // outline: 1px solid tomato;
+  // @media screen and (max-width: 767px) {
+  //   width: 480px;
+  // }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) {
     width: 480px;
   }
 

@@ -1,8 +1,8 @@
 .team {
   background-color: var(--filter-btn-bgd-color);
-  @media screen and (max-width: 479px) {
-    width: 480px;
-  }
+  // @media screen and (max-width: 479px) {
+  //   width: 480px;
+  // }
 }
 
 .team-title {
@@ -38,9 +38,16 @@
 
   background-color: var(--herobtntext-primbgd-color);
 
-  @media screen and (max-width: 767px) {
+  // @media screen and (max-width: 767px) {
+  //   &:not(:last-child) {
+  //     width: 450px;
+  //     margin-bottom: 30px;
+  //   }
+  // }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 450px;
     &:not(:last-child) {
-      width: 450px;
       margin-bottom: 30px;
     }
   }
@@ -55,7 +62,12 @@
 }
 
 .team-img {
-  @media screen and (max-width: 767px) {
+  // @media screen and (max-width: 767px) {
+  //   width: 450px;
+  //   height: 460px;
+  // }
+
+  @media screen and (min-width: 480px) {
     width: 450px;
     height: 460px;
   }
