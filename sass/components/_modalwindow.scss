@@ -16,7 +16,9 @@
     pointer-events: none;
   }
 
-  overflow-y: scroll;
+  // overflow-y: scroll;
+  // overflow: hidden;
+  overflow: auto;
 }
 
 .modal {
